@@ -1,4 +1,4 @@
-import ui
+import ui,reports
 # The entry point of the finance system
 def main_menu():
     while True:
@@ -12,9 +12,9 @@ def main_menu():
             ui.add_expense()
         elif choice == "2":
             # Implement function to view expenses
-            view_expenses()    
+            ui.view_expenses()    
         elif choice == "3":
-            generate_report()    
+            reports.generate_reports()    
         elif choice in ('q',"quit","exit"):
             break
         else:
