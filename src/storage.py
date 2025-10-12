@@ -70,7 +70,7 @@ def get_expenses(filename):
     return expenses
 
 
-# Validation helpers
+
 def parse_amount(s):
     try:
         return float(s)
